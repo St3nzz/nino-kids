@@ -1,0 +1,126 @@
+a{
+    text-decoration: none;
+    color: #625555;
+}
+p{
+    margin: 0;
+    font-size: 16px;
+}
+*{
+    font-family: 'Lora', serif;
+}
+.button{
+    border-radius: 5px;
+    border: 1px solid #B58B7C;
+    background: none;
+    text-transform: uppercase;
+    padding: 13px 60px;
+}
+#top{
+    position: fixed;
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #D4D4D4;
+    .center{
+        display: flex;
+        align-items: center;
+    }
+    .right{
+        text-align: right;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .menu{
+        margin-left: 72px;
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background-color: #625555;
+        position: relative;
+        &:after, &:before{
+            display: inline-block;
+            content: "";
+            width: 18px;
+            height: 2px;
+            background-color: #625555;
+            position: absolute;
+            top: -6px;
+        }
+        &:before{
+            top: 6px;
+        }
+    }
+    .search{
+        margin-left: 56px;
+        display: inline-block;
+        i{
+            font-size: 16px;
+        }
+    }
+    .boys{
+        margin-left: 144px;
+    }
+    .girls{
+        margin-left: 70px;
+    }
+    .phone{
+        margin-left: 140px;
+    }
+    .user{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        i{
+            line-height: 39px;
+        }
+        img{
+            height: 19px;
+            margin-top: -2px;
+        }
+        .cart{
+            img{
+                margin-top: -7px;   
+            }
+        }
+        .wishlist{
+            i{
+                font-size: 19px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.header{
+    // height: 100vh;
+    background: url(../images/header-bg.jpg) top center no-repeat;
+    background-size: 100%;
+    padding-top: 155px;
+    padding-bottom: 96px;
+    &__title{
+        margin-top: 94px;
+        h1{
+            text-transform: uppercase;
+            color: #847070;
+            font-size: 64px;
+        }
+    }
+    &__products{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__product{
+        position: relative;
+    }
+    &__toCart{
+        position: absolute;
+        bottom: 7px;
+        right: 7px;
+    }
+    &__button{
+        margin-top: 88px;
+    }
+}
